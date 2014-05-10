@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/yoshidatakuma/Desktop/ISDL/M1/practice/python'
+let g:netrw_dirhist_2='/Users/yoshidatakuma/.vim'
+let g:netrw_dirhist_3='/Users/yoshidatakuma'
+let g:netrw_dirhist_4='/Users/yoshidatakuma/.vim/bundle/vim-snippets/snippets'
+let g:netrw_dirhist_5='/Users/yoshidatakuma/.vim/bundle/vim-snippets'
+let g:netrw_dirhist_6='/Users/yoshidatakuma/.vim/bundle'
+let g:netrw_dirhist_7='/Users/yoshidatakuma/.vim'
+let g:netrw_dirhist_8='/Users/yoshidatakuma/tmux-powerline'

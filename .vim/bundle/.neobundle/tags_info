@@ -1,0 +1,14 @@
+command-t
+ctrlp.vim
+indentLine
+lightline.vim
+mpvim
+neocomplcache.vim
+neosnippet
+neosnippet-snippets
+neosnippet.vim
+syntastic
+vim-colors-solarized
+vim-fugitive
+vim-surround
+yankround.vim
