@@ -8,7 +8,10 @@ neosnippet
 neosnippet-snippets
 neosnippet.vim
 syntastic
+unite.vim
 vim-colors-solarized
 vim-fugitive
 vim-surround
+vimproc
+vimshell.vim
 yankround.vim

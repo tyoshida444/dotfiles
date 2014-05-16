@@ -35,7 +35,11 @@
 	NeoBundle 'LeafCage/yankround.vim'
 	"多機能セレクタ"
 	NeoBundle 'kien/ctrlp.vim'
-	
+	"VimShell"
+	NeoBundle 'Shougo/vimshell.vim'
+	NeoBundle 'Shougo/vimproc'
+	"unite.vim"
+	NeoBundle 'Shougo/unite.vim'
  
 
     filetype plugin indent on     " Required!
@@ -204,6 +208,17 @@
 	"文字無いとこにもカーソル移動可能(なんかコワイ)
 	"set virtualedit=all
 
+	"ファイル開いたら前回のカーソル位置へ移動
+	augroup vimrcEx
+	autocmd!
+	autocmd BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line('$') |
+	\   exe "normal! g`\"" |
+	\ endif
+	augroup END
+
+	"ノーマルモードに戻ったら日本語入力をオフにする
+	set imdisable
 "--------------- Python用 ---------------"
     autocmd FileType python setl autoindent
     autocmd FileType python setl smartindent cinwords=if,elif,for,while,try,except,finally,def,class
@@ -237,7 +252,7 @@
 "---------------- yankroud の設定 -----------------
 	"" キーマップ
 	nmap p <Plug>(yankround-p)
-S-k>     <Plug>(neosnippet_expand_or_jump)
+	smap <S-k>     <Plug>(neosnippet_expand_or_jump)
 	smap <S-k>     <Plug>(neosnippet_expand_or_jump)
 	xmap <S-k>     <Plug>(neosnippet_expand_target)
 	 
