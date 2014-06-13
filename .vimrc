@@ -279,6 +279,28 @@
 	  set conceallevel=2 concealcursor=i
 	endif
 
+
+"----------------- Dash.app ------------------
+function! s:dash(...)
+    if len(a:000) == 1 && len(a:1) == 0
+        echomsg 'No keyword'
+    else
+        let ft = &filetype
+        if &filetype == 'python'
+            let ft = ft.'2'
+        endif
+        let ft = ft.':'
+        let word = len(a:000) == 0 ? input(eyword: ', ft.expand('<cword>')) : ft.join(a:000, ' ')
+        call system(printf("open dash://'%s'", word))
+    endif
+endfunction
+																							
+command! -nargs=* Dash call <SID>dash(<f-args>)
+																						
+nnoremap <Leader>d :call <SID>dash(expand('<cword>'))<CR>'
+
+
+	
 "---------------- vim-snippets -------------------
 "	let g:neosnippet#enable_snipmate_compatibility = 1
 "	let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
