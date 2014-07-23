@@ -15,9 +15,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#-------- rmを安全に --------
-alias rm='rm -i'
-
 #-------- java文字化け --------
 alias javac='javac -J-Dfile.encoding=UTF-8'
 alias java='java -Dfile.encoding=UTF-8'
