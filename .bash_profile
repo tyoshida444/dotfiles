@@ -9,26 +9,9 @@ function tex(){
 	open $1.pdf
 }
 
-export PATH=$PATH:/Applications/android-sdk/sdk/platform-tools
-
-##
-# Your previous /Users/yoshidatakuma/.bash_profile file was backed up as /Users/yoshidatakuma/.bash_profile.macports-saved_2013-05-18_at_13:42:17
-##
-
-# MacPorts Installer addition on 2013-05-18_at_13:42:17: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
-##
-# Your previous /Users/yoshidatakuma/.bash_profile file was backed up as /Users/yoshidatakuma/.bash_profile.macports-saved_2013-05-18_at_15:34:05
-##
-
-# MacPorts Installer addition on 2013-05-18_at_15:34:05: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
 if [ -f ~/.bashrc ] ; then
-	. ~/.bashrc
+	. ~/dotfiles/.bashrc
 fi
 
+export PATH=$PATH/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin
+export PATH=:/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:/Applications/UpTeX.app/teTeX/bin:/sbin:/opt/X11/bin:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk/platform-tools:/usr/local/mysql/bin

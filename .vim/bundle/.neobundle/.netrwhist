@@ -1,10 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/yoshidatakuma/dotfiles'
-let g:netrw_dirhist_2='/Users/yoshidatakuma/dotfiles/.vim'
-let g:netrw_dirhist_3='/Users/yoshidatakuma/.vim'
-let g:netrw_dirhist_4='/Users/yoshidatakuma/Desktop/ISDL/M1/paper/ICAART2015/tyoshida/nenmatsu'
-let g:netrw_dirhist_5='/Users/yoshidatakuma/Desktop/Practice/python'
-let g:netrw_dirhist_6='/Users/yoshidatakuma/Desktop/Practice/github/test/.git/refs/remotes/origin'
-let g:netrw_dirhist_7='/Library/WebServer/Documents'
-let g:netrw_dirhist_8='/Users/yoshidatakuma/Desktop/ISDL/M1/simulation/github'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/yoshidatakuma/Desktop/job_hunting/recruit/summer/yoshida/app/views/registration'
+let g:netrw_dirhist_2='/Users/yoshidatakuma/Desktop/job_hunting/recruit/summer/yoshida/app/views/quiz'
+let g:netrw_dirhist_3='/Users/yoshidatakuma/Desktop/job_hunting/recruit/summer/yoshida/app/controllers/users'
