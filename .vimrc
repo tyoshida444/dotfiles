@@ -13,20 +13,20 @@
   NeoBundle 'git://git.wincent.com/command-t.git'
   "Git以外のリポジトリにあるプラグインを利用する場合
   NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
-	"lightline
-	NeoBundle 'itchyny/lightline.vim'
-	"エラー訂正
-	NeoBundle 'git://github.com/scrooloose/syntastic.git'
-	"入力補完
-	NeoBundle 'Shougo/neocomplcache.vim'
-	"カラースキーム
-	NeoBundle 'altercation/vim-colors-solarized'
-	"囲んでる系を簡単に
-	NeoBundle 'tpope/vim-surround'
-	"多機能セレクタ
-	NeoBundle 'kien/ctrlp.vim'
-	"unite.vim
-	NeoBundle 'Shougo/unite.vim'
+  "lightline
+  NeoBundle 'itchyny/lightline.vim'
+  "エラー訂正
+  NeoBundle 'git://github.com/scrooloose/syntastic.git'
+  "入力補完
+  NeoBundle 'Shougo/neocomplcache.vim'
+  "カラースキーム
+  NeoBundle 'altercation/vim-colors-solarized'
+  "囲んでる系を簡単に
+  NeoBundle 'tpope/vim-surround'
+  "多機能セレクタ
+  NeoBundle 'kien/ctrlp.vim'
+  "unite.vim
+  NeoBundle 'Shougo/unite.vim'
   "ファイルオープンを便利に
   NeoBundle 'Shougo/unite.vim'
   "Unite.vimで最近使ったファイルを表示できるようにする
@@ -35,8 +35,8 @@
 
   filetype plugin indent on     " Required!
     
-	"未インストールのプラグインを確認"
-	NeoBundleCheck
+  "未インストールのプラグインを確認"
+  NeoBundleCheck
 
 "--------------- キーバインド ---------------"
 
@@ -164,17 +164,17 @@
   "検索結果をハイライト"
   set hlsearch
 
-	"カーソルの下の単語を検索
-	vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v, '\/'), "\n", '\\n', 'g')<CR><CR>
+  "カーソルの下の単語を検索
+  vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v, '\/'), "\n", '\\n', 'g')<CR><CR>
 
-	"ファイル開いたら前回のカーソル位置へ移動
-	augroup vimrcEx
-	autocmd!
-	autocmd BufReadPost *
-	\ if line("'\"") > 1 && line("'\"") <= line('$') |
-	\   exe "normal! g`\"" |
-	\ endif
-	augroup END
+  "ファイル開いたら前回のカーソル位置へ移動
+  augroup vimrcEx
+  autocmd!
+  autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line('$') |
+  \   exe "normal! g`\"" |
+  \ endif
+  augroup END
 
 
 "--------------- Python用 ---------------"
@@ -184,13 +184,13 @@
 
 "--------------- lightlineの設定 -----------------"
 
-	let g:lightline = {
-		\ 'colorscheme':'wombat',
-	  \ 'component': {
-	  \   'readonly': '%{&readonly?"⭤":""}',
-		\ },
-	  \ 'separator': { 'left': '⮀', 'right': '⮂' },
-	  \ 'subseparator': { 'left': '⮁', 'right': '⮃' },
+  let g:lightline = {
+    \ 'colorscheme':'wombat',
+    \ 'component': {
+    \   'readonly': '%{&readonly?"⭤":""}',
+    \ },
+    \ 'separator': { 'left': '⮀', 'right': '⮂' },
+    \ 'subseparator': { 'left': '⮁', 'right': '⮃' },
     \ }
 
 
