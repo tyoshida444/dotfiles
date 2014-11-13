@@ -17,8 +17,6 @@
   NeoBundle 'itchyny/lightline.vim'
   "エラー訂正
   NeoBundle 'git://github.com/scrooloose/syntastic.git'
-  "入力補完
-  NeoBundle 'Shougo/neocomplcache.vim'
   "カラースキーム
   NeoBundle 'altercation/vim-colors-solarized'
   "囲んでる系を簡単に
@@ -31,7 +29,6 @@
   NeoBundle 'Shougo/unite.vim'
   "Unite.vimで最近使ったファイルを表示できるようにする
   NeoBundle 'Shougo/neomru.vim'
- 
 
   filetype plugin indent on     " Required!
     
@@ -164,6 +161,9 @@
   "検索結果をハイライト"
   set hlsearch
 
+  "スクロール高速化"
+  set lazyredraw
+
   "カーソルの下の単語を検索
   vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v, '\/'), "\n", '\\n', 'g')<CR><CR>
 
@@ -175,6 +175,9 @@
   \   exe "normal! g`\"" |
   \ endif
   augroup END
+
+  "undoファイル作らない
+  set noundofile
 
 
 "--------------- Python用 ---------------"
@@ -267,6 +270,4 @@ nnoremap <Leader>d :call <SID>dash(expand('<cword>'))<CR>'
   noremap <C-N> :Unite -buffer-name=file file<CR>
   " 最近使ったファイルの一覧
   noremap <C-Z> :Unite file_mru<CR>
-  " sourcesを「今開いているファイルのディレクトリ」とする
-  noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
   

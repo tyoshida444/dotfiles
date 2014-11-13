@@ -9,6 +9,10 @@ function tex(){
 	open $1.pdf
 }
 
+if [[ -s ~/.nvm/nvm.sh ]];
+  then source ~/.nvm/nvm.sh
+fi
+
 if [ -f ~/.bashrc ] ; then
 	. ~/dotfiles/.bashrc
 fi
